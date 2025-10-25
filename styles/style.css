@@ -1,1 +1,90 @@
-/* место для вашего кода */
+/* Шаг 1. Лейаут */
+
+/* Расположить блок .content посередине .page */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Грид для .content и расположение элементов в строку, прижатых к низу */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Настройте пропорции по необходимости */
+    grid-template-rows: auto 1fr;
+    gap: 20px; /* Отступы между элементами */
+    align-items: end;
+    width: 1200px; /* Фиксированная ширина контейнера */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid-area для всех элементов внутри .content */
+.content__search {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.content__list-container {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.content__details {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+/* Расположить элементы .search-form в строку */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.search-form__item {
+    flex: 1;
+}
+
+/* Установить вертикальный размер для .content__list-container и добавить скролл */
+.content__list-container {
+    height: 500px; /* или нужная вам высота */
+    overflow-y: auto;
+}
+
+/* Стилизация скроллбара (если нужно дополнить существующие) */
+.content__list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content__list-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.content__list-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.content__list-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Растянуть .content__details на всю доступную ширину и высоту */
+.content__details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Отступы между заголовком и зоной с карточками */
+.content__details-header {
+    margin-block-end: 20px;
+}
+
+.content__details-cards {
+    flex: 1;
+    display: grid;
+    gap: 15px;
+}
