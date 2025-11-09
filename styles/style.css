@@ -1,1 +1,328 @@
-/* место для вашего кода */
+.ftr {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 180px 50px 88px;
+  gap: 140px;
+  align-items: flex-start;
+}
+
+.ftr_addr_list {
+  padding-left: 0px;
+}
+
+.ftr_nav {
+  padding-left: 35px;
+}
+
+.ftr_nav_list {
+  list-style-type: none;
+  text-underline-offset: 3px;
+}
+
+.ftr_nav_item {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ftr_main_link {
+  text-decoration: none;
+}
+
+.ftr_icons_wrap {
+  display: flex;
+  gap: 48px;
+}
+
+.ftr_icon {
+  width: 48px;
+  height: 48px;
+}
+
+.about_sec {
+  margin-top: 148px;
+}
+
+.about_wrap {
+  display: grid;
+  grid-template-columns: 334px repeat(1, 1fr);
+  gap: 25px;
+  padding: 34px 24px 0px;
+}
+
+.about_logo_wrap {
+  justify-self: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_logo_img {
+  width: 148px;
+  height: 114px;
+}
+
+.about_content_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 100px;
+}
+
+.about_title {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+}
+
+.about_text_wrap {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about_text_1 {
+  padding-top: 76px;
+}
+
+.about_text_2 {
+  padding-top: 25px;
+}
+
+.lots_title {
+  padding-top: 179px;
+  padding-bottom: 26px;
+  padding-left: 64px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lots_container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 25px;
+  justify-content: center;
+}
+
+.lot_card_wrap {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
+.lot_card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: -2;
+  padding: 51px 40px 48px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lot_card_1 {
+  background-image: url(./../images/card-lot-01.jpg);
+}
+
+.lot_card_2 {
+  background-image: url(./../images/card-lot-02.jpg);
+}
+
+.lot_card_3 {
+  background-image: url(./../images/card-lot-03.jpg);
+}
+
+.lot_title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.lot_desc {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.view_more_link {
+  display: block;
+  text-underline-offset: 3px;
+  padding-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  margin-left: 64px;
+}
+
+.cover_sec {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay_layer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cover_heading {
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 147px;
+  gap: 20px;
+}
+
+.cover_word {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
+  position: relative;
+}
+
+.cover_center {
+  align-self: center;
+  position: relative;
+  top: 15px;
+}
+
+.cover_right {
+  align-self: flex-end;
+  position: relative;
+  top: 15px;
+  left: 30px;
+}
+
+.letter_spacing {
+  letter-spacing: 60px;
+}
+
+.no_letter_spacing {
+  letter-spacing: 60px;
+}
+
+.cover_info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 0px 50px 55px 78px;
+  gap: 79px;
+}
+
+.cover_desc {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 18px;
+}
+
+.btn {
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 51px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-top: 92px;
+  padding-left: 24px;
+  padding-bottom: 92px;
+  padding-right: 24px;
+}
+
+.hdr_nav {
+  display: flex;
+  justify-self: center;
+}
+
+.nav_list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  padding-right: 7px;
+}
+
+.nav_item {
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px;
+}
+
+.main_item {
+  list-style-type: none;
+}
+
+.nav_link {
+  text-decoration: none;
+}
+
+.hdr_logo {
+  width: 148px;
+  height: 105px;
+}
+
+.addr_list {
+  padding-left: 185px;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none;
+}
+
+.addr_phone {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.addr_street {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
